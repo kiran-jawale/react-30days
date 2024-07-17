@@ -1,10 +1,10 @@
 import React from "react";
-import Day2 from "./components/Day2";
+import Day4 from "./components/Day4";
 
 const App = () => {
   return (
     <>
-      <Day2 />
+      <Day4 />
     </>
   );
 };
