@@ -1,3 +1,6 @@
+
+// controlled component-form handling, rendering data, handling input change
+
 import React from "react";
 import { useState } from "react";
 

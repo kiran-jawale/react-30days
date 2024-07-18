@@ -18,8 +18,6 @@ const TaskItem = ({ deleteTask, edit, toggle, task }) => {
   }
 
   const toggleSwitch = () =>{
-    console.log(newTask.isCompleted)
-    console.log(task.isCompleted)
     toggle(newTask.id)
   }
 

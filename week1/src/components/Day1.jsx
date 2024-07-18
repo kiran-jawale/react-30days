@@ -1,3 +1,6 @@
+
+//state, array state, event listening, mapping lists
+
 import React, { useState } from "react";
 
 const Day1 = () => {
@@ -26,4 +29,3 @@ const Day1 = () => {
 
 export default Day1;
 
-//state, array state, event handling/listening, mapping lists

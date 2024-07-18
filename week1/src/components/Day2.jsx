@@ -1,3 +1,6 @@
+
+//state - array of objects, list-keys, tailwind 
+
 import React, { useState } from 'react';
 
 export default function Day2 () {
@@ -10,7 +13,7 @@ export default function Day2 () {
     ])
 
     const handleDelete = (id) => {
-        setTodos( (prev) => todos.filter( (todo) => todo.id !== id ) )
+        setTodos( (prev) => prev.filter( (todo) => todo.id !== id ) )
     }
 
     return (

@@ -1,3 +1,6 @@
+
+//state, props, CRUD , updating state, rerendering components, prev state, 
+
 import React,{useState} from 'react';
 import TaskForm from './children/TaskForm'
 import TaskList from './children/TaskList'
@@ -17,19 +20,16 @@ export default function Day3() {
     }
 
     function deleteTask(id) {
-        setTasks((prev) => (tasks.filter( (task) => task.id !== id )))
+        setTasks((prev) => (prev.filter( (task) => task.id !== id )))
     }
 
     function updateTask(newTask) {
-        console.log('update called')
-        setTasks( (prev) => (tasks.map( (task) => ((task.id === newTask.id) ? newTask : task) )) )
+        setTasks( (prev) => (prev.map( (task) => ((task.id === newTask.id) ? newTask : task) )) )
     }
 
     function toggleTask(id) {
         setTasks( (prev) => prev.map( (prevTask) => prevTask.id === id ? 
         {...prevTask, isCompleted: !prevTask.isCompleted} : prevTask ) )
-        console.log('toggled')
-        console.log(tasks.filter((task) => task.id === id ? task : null))
     }
 
     return (
