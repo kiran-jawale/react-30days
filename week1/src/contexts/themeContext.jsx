@@ -11,7 +11,7 @@ const ThemeProvider = ({ children }) => { //to wrap children and provide context
     }
 
     return  (
-        <ThemeContext.Provider value={{isDark, toggleTheme}} > //ThemeProvider = ThemeContext.Provider
+        <ThemeContext.Provider value={{isDark, toggleTheme}} >{ /*ThemeProvider = ThemeContext.Provider*/}
             {children}
         </ThemeContext.Provider>
     )
