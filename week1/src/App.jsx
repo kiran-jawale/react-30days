@@ -1,11 +1,12 @@
 import React from "react";
-import Day6 from "./components/Day6";
+import Day7 from "./components/Day7";
+import { ThemeProvider } from "./contexts/themeContext";
 
 const App = () => {
   return (
-    <>
-      <Day6 />
-    </>
+    <ThemeProvider>
+      <Day7 />
+    </ThemeProvider>
   );
 };
 
